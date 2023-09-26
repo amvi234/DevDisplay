@@ -1,24 +1,67 @@
 .header {
-    font-size: 10vw;
+    // background-color: aliceblue;
+    height: 95vh;
+    background-image: url(https://yourrealityescapers.com/wp-content/uploads/2021/10/skandagiri-1-e1634662996623.jpg);
+    background-size: cover;
+    background-position: top;
     position: relative;
+    &__logo-box {
+        float: left;
+        height: 4rem;
+        width: 10%;
+
+        &__logo {
+            margin-left: 1rem;
+            transition: transform .7s ease-in-out;
+            margin-top: 5rem;
+            position: relative;
+            height: 10rem;
+            width: 20rem;
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    &__name__amit {
+        position: absolute;
+        font-size:12rem;
+        height: 0rem;
+        margin: 0 0 0 53rem;
+
+        &:hover {
+            transform: translateX(4px) translateY(-4px);
+            color: violet;
+            transform: rotate(10deg);
+            box-shadow: 0 1rem 3rem rgba(blue, .1);
+            &::after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+        }
+    }
 
 
-    &__main-nav-list{
+    &__main-nav-list {
+        float: right;
+        height: 10rem;
         margin-left: 160rem;
         justify-content: space-between;
         display: flex;
         list-style: none;
         gap: .8rem;
+
         &__main-nav-link {
             text-decoration: none;
             display: inline-block;
             font-weight: 900;
             font-size: 3rem;
-            color: red;
+            color: yellowgreen;
             margin: 0 1rem;
+            &:hover {
+                transform: rotate(-50deg);
+            }
         }
     }
-    
+
 }
-
-
