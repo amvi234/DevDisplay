@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem; }
+
+.main-nav-list {
+  margin-left: 10rem;
+  justify-content: space-between;
+  display: flex;
+  list-style: none;
+  gap: .8rem; }
+
+.main-nav-link {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 900;
+  font-size: 2rem;
+  color: red;
+  margin: 0 1rem; }

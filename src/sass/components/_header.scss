@@ -1,0 +1,24 @@
+.header {
+    font-size: 10vw;
+    position: relative;
+
+
+    &__main-nav-list{
+        margin-left: 160rem;
+        justify-content: space-between;
+        display: flex;
+        list-style: none;
+        gap: .8rem;
+        &__main-nav-link {
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 900;
+            font-size: 3rem;
+            color: red;
+            margin: 0 1rem;
+        }
+    }
+    
+}
+
+
