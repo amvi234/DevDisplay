@@ -45,7 +45,6 @@
         background-size: 200% auto;
         color: #fff;
         background-clip: text;
-        text-fill-color: transparent;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: textclip 2s linear infinite;
@@ -62,12 +61,14 @@
 
     &__main-nav-list {
         float: right;
+        position: relative;
+        top: 5%;
+        left: 20%;
         height: 10rem;
-        margin-left: 160rem;
         justify-content: space-between;
         display: flex;
         list-style: none;
-        gap: .8rem;
+        gap: 6rem;
 
         &__main-nav-link {
             text-decoration: none;
@@ -86,6 +87,8 @@
     &__namaste {
         z-index: -1;
         position: relative;
+        top: 22%;
+        left: 10%;
         font-size: 12rem;
         padding-top: 15%;
         

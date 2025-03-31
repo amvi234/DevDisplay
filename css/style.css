@@ -51,7 +51,6 @@ body {
     background-size: 200% auto;
     color: #fff;
     background-clip: text;
-    text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
@@ -63,12 +62,14 @@ body {
     background-position: 200% center; } }
   .header__main-nav-list {
     float: right;
+    position: relative;
+    top: 5%;
+    left: 20%;
     height: 10rem;
-    margin-left: 160rem;
     justify-content: space-between;
     display: flex;
     list-style: none;
-    gap: .8rem; }
+    gap: 6rem; }
     .header__main-nav-list__main-nav-link {
       text-decoration: none;
       display: inline-block;
@@ -82,6 +83,8 @@ body {
   .header__namaste {
     z-index: -1;
     position: relative;
+    top: 22%;
+    left: 10%;
     font-size: 12rem;
     padding-top: 15%;
     font-family: "Montserrat Medium";
