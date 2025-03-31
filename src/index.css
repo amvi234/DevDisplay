@@ -4,7 +4,7 @@
   font-weight: 400;
   color-scheme: light dark;
   color: rgba(141, 58, 58, 0.87);
-  /* background-filter: blur(3px); */
+  backdrop-filter: blur(3px);
   background-image: url('../assets/test.jpeg');
   background-size: cover;
   
