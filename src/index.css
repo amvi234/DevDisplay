@@ -4,8 +4,9 @@
   font-weight: 400;
   color-scheme: light dark;
   color: rgba(141, 58, 58, 0.87);
-  /* background-filter: blur(3px);image: url(https://yourrealityescapers.com/wp-content/uploads/2021/10/skandagiri-1-e1634662996623.jpg);
-  background-size: cover; */
+  /* background-filter: blur(3px); */
+  background-image: url('../assets/test.jpeg');
+  background-size: cover;
   
   background-color: #242424;
   font-synthesis: none;
