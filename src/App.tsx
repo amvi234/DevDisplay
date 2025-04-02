@@ -4,6 +4,7 @@ import Home from "./components/Home";
 
 import './sass/main.scss'
 import About from "./components/About";
+import Skills from "./components/Skills";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />}/>
+        <Route path="/skills" element={<Skills />}/>
       </Routes>
       </BrowserRouter>
       </>

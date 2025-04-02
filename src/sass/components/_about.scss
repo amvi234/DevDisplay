@@ -4,8 +4,8 @@
 	font-size: 3.6rem;
 	padding: 3rem;
 	position: relative;
-	top: 30rem;
-	left: 20%;
+	top: 25rem;
+	left: 1%;
 	max-width: 100%;
 	margin: 0 auto;
 	font-family: "Montserrat", sans-serif;
@@ -26,7 +26,6 @@
 			filter: blur(4px);
 
 			&:before {
-				// content: "•";
 				color: greenyellow;
 				font-weight: bold;
 				font-size: 1.5rem;
