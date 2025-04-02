@@ -1,0 +1,87 @@
+.skills {
+	position: relative;
+	top: 40rem;
+	left: 110rem;
+	max-width: 60rem;
+	margin: 0 auto;
+	font-family: "Montserrat", sans-serif;
+
+	&__title {
+		color: yellow;
+		font-size: 6rem;
+		font-weight: bold;
+		margin-bottom: 3rem;
+		text-align: center;
+	}
+
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+
+		@media (min-width: 768px) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	&__item {
+		border-radius: 1rem;
+		overflow: hidden;
+		transition: all 0.3s ease;
+
+		&:hover {
+			transform: scale(1.05);
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+		}
+
+		// Color variations
+		&--1 {
+			background-color: #3498db;
+		} // Blue
+		&--2 {
+			background-color: #9b59b6;
+		} // Purple
+		&--3 {
+			background-color: #2ecc71;
+		} // Green
+		&--4 {
+			background-color: #e74c3c;
+		} // Red
+		&--5 {
+			background-color: #f39c12;
+		} // Yellow
+		&--6 {
+			background-color: #e84393;
+		} // Pink
+		&--7 {
+			background-color: #6c5ce7;
+		} // Indigo
+		&--8 {
+			background-color: #00cec9;
+		} // Teal
+	}
+
+	&__link {
+		display: block;
+		padding: 2rem;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		font-size: 4.8rem;
+		font-weight: 500;
+		height: 100%;
+		width: 100%;
+		transition: background-color 0.3s ease;
+
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.1);
+		}
+
+		@media (min-width: 768px) {
+			font-size: 3rem;
+		}
+	}
+}
