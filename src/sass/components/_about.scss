@@ -1,4 +1,114 @@
-.about_section {
-    font-size: 13rem;
-    position: absolute;
+.about {
+	display: flex;
+	flex-direction: column;
+    font-size: 3.6rem;
+	padding: 3rem;
+    position: relative;
+	top: 20rem;
+    left: 90rem;
+	max-width: 1200px;
+	margin: 0 auto;
+	font-family: "Montserrat", sans-serif;
+    transform: scale(0.94);
+	animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        
+        li {
+          position: relative;
+          font-size: 4.2rem;
+          margin-bottom: 1rem;
+          padding-left: 2rem;
+          line-height: 1.5;
+          opacity: 0;
+          filter: blur(4px);
+          
+          &:before {
+            // content: "•";
+            color: greenyellow;
+            font-weight: bold;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -0.25rem;
+          }
+          
+          &:hover {
+            color: greenyellow;
+            transform: translateX(5px);
+            transition: all 0.3s ease;
+          }
+          
+          // Animation delays for each list item
+          &:nth-child(1) {
+            animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          }
+          
+          &:nth-child(2) {
+            animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          }
+          
+          &:nth-child(3) {
+            animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          }
+          
+          &:nth-child(4) {
+            animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          }
+          
+          &:nth-child(5) {
+            animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          }
+          
+          &:nth-child(6) {
+            animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          }
+          
+          &:nth-child(7) {
+            animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          }
+          
+          &:nth-child(8) {
+            animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          }
+          
+          &:nth-child(9) {
+            animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          }
+          
+          &:nth-child(10) {
+            animation: fade-in 0.8s 1.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+          }
+        }
+    }
+}
+
+h2 {
+    margin-left: 45rem;    
+	font-size: 5.5rem;
+	font-weight: 600;
+    justify-content: center;
+	margin-bottom: 2rem;
+	color: lightsalmon;
+	border-bottom: 3px solid #3498db;
+	padding-bottom: 0.5rem;
+	width: fit-content;
+    opacity: 0;
+    filter: blur(4px);
+    animation: fade-in 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes scale {
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes fade-in {
+	100% {
+		opacity: 1;
+		filter: blur(0);
+	}
 }

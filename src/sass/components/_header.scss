@@ -1,6 +1,6 @@
 .bg-img {
-    height: 95vh;
-    width: 100%;
+    height: 100vh;
+    width: 100vh;
     background-size: cover;
     background-position: top;
     position: absolute;
@@ -9,8 +9,9 @@
 }
 
 .header {
-    height: 95vh;
-
+    position: fixed;
+    top: 0;
+    width: 100%;
     &__logo-box {
         float: left;
         height: 4rem;
@@ -57,12 +58,11 @@
         }
     }
 
-
     &__main-nav-list {
         float: right;
         position: relative;
-        top: 5%;
-        left: 20%;
+        top: 8rem;
+        right: 10rem;
         height: 10rem;
         justify-content: space-between;
         display: flex;
@@ -71,7 +71,7 @@
 
         &__main-nav-link {
             text-decoration: none;
-            display: inline-block;
+            display: inline;
             font-weight: 900;
             font-size: 3rem;
             color: yellowgreen;
@@ -83,67 +83,4 @@
             }
         }
     }
-    &__namaste {
-        z-index: -1;
-        position: relative;
-        top: 22%;
-        left: 10%;
-        font-size: 12rem;
-        padding-top: 15%;
-        
-        font-family: "Montserrat Medium";
-        max-width: 40ch;
-        text-align: center;
-        transform: scale(0.94);
-        animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
-      }
-      @keyframes scale {
-        100% {
-          transform: scale(1);
-        }
-      }
-      
-      span {
-        margin-right: 2rem;
-        opacity: 0;
-        display: inline-flex;
-        filter: blur(4px);
-      }
-      
-      span:nth-child(1) {
-        animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-      }
-      
-      span:nth-child(2) {
-        animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-      }
-      
-      span:nth-child(3) {
-        animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
-      }
-      
-      span:nth-child(4) {
-        animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-      }
-      
-      span:nth-child(5) {
-        animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-      }
-      
-      span:nth-child(6) {
-        animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
-      }
-      
-      span:nth-child(7) {
-        animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
-      }
-      
-      
-      @keyframes fade-in {
-        100% {
-          opacity: 1;
-          filter: blur(0);
-        }
-    }
-
 }
