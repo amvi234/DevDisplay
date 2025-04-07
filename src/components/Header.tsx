@@ -3,9 +3,6 @@ export default function Header() {
   return (
     <>
       <div className="header">
-        <div className="header__logo-box">
-          <img src="/assets/AV.jpg" alt="Logo" className="header__logo-box__logo" />
-        </div>
         <div className="header__name">
           <h1 className="header__name__amit">AMIT VIKRAM</h1>
         </div>
