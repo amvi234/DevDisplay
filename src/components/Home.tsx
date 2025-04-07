@@ -1,13 +1,12 @@
 export default function Home() {
     return (
         <div className="home">
-            <span>Hola </span>
-            <span>Explorers!!! </span>
-            <span>Welcome </span>
-            <span>to </span>
-            <span>my </span>
+            <span>Namaste</span>
+            <span>Ji!!! </span>
+            <span>Swagat </span>
+            <span>hai mere </span>
             <span>Portfolio </span>
-            <span>Website</span>
+            <span>Website Par.</span>
         </div>
     )
 }
