@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import './sass/main.scss'
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" element={<About />}/>
         <Route path="/skills" element={<Skills />}/>
       </Routes>
+      <Footer />
       </BrowserRouter>
       </>
   )
