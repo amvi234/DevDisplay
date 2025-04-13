@@ -1,7 +1,3 @@
-// Footer.jsx
-// First, install react-icons with: npm install react-icons
-// or: yarn add react-icons
-
 import { FaGithub, FaLinkedin, FaHackerrank } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { FiDownload, FiPhone, FiMail } from "react-icons/fi";
