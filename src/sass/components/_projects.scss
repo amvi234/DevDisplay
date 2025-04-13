@@ -1,0 +1,32 @@
+.projects {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &__title {
+        color: red;
+        font-size: 3.5rem;
+        font-weight: bold;
+		margin-bottom: 3rem;
+		text-align: center;
+    }
+    &__grid {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);;
+        gap: 4rem;
+        list-style-type: none;
+        padding: 0;
+		margin: 0;
+    }
+    &__link{
+        list-style-type: none;
+        font-size: 5rem;
+        border: 2px solid green;
+        height: 12rem;
+        width: 12rem; 
+		border-radius: 1rem;
+		transition: all 0.3s ease;
+    }
+}
