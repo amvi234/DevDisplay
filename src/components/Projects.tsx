@@ -24,9 +24,9 @@ const Projects = () => {
     };
 
     const items = [
-        { name: 'CartVault', GitHub: "https://github.com/amvi234/CartVault", LiveLink: "", Tech: ['NextJS', 'Typescript', 'DJango', 'Python', 'Docker', 'Tailwind CSS'], Status: "Ongoing", Description: "Often People have the habit of saving their loved in platforms like flipkart, amazon, etc... But sometimes users cannot find their exact item from this list. " },
+        { name: 'CartVault', GitHub: "https://github.com/amvi234/CartVault", LiveLink: "", Tech: ['NextJS', 'Typescript', 'DJango', 'Python', 'Docker', 'Tailwind CSS'], Status: "Ongoing", Description: "Often People have the habit of saving their loved product in platforms like flipkart, amazon, etc. Created a app to retrieve the item as per your desired choices." },
         { name: 'DevDisplay', GitHub: "https://github.com/amvi234/DevDisplay", LiveLink: "https://amitvikramportfolio.netlify.app/", Tech: ['ReactJS', 'TypeScript', 'SASS'], Status: "Completed", Description: "A React website showcases skills, about section, projects section and contacts. Hosted on Netlify for easy access." },
-        { name: 'DineEase', GitHub: "https://github.com/amvi234/DineEase", LiveLink: "", Tech: ['Django', 'Python', 'AJAX'], Status: "Completed", Description: "Often restaurants have the issue of maintaining their transactions. To solve the common issue of Point of Sale(POS) System." },
+        { name: 'DineEase', GitHub: "https://github.com/amvi234/DineEase", LiveLink: "", Tech: ['Django', 'Python', 'AJAX'], Status: "Completed", Description: "Often restaurants have the issue of maintaining their transactions. DEveloped this app to solve the common issue of Point of Sale(POS) System." },
         { name: 'SoleMate', GitHub: "https://github.com/amvi234/SoleMate", LiveLink: "https://advance-filtering-e-com.netlify.app/", Tech: ['React', 'Javascript', 'CSS'], Status: "Completed", Description: "React project displays items with advanced filtering features to sort the shoe items. Responsive with all layouts. Hosted on netlify" }
     ];
 
