@@ -12,7 +12,6 @@ export default function About() {
         <li>Have good knowledge in AWS and DevOps concepts</li>
         <li>Have good knowledge of Agile Methodology</li>
         <li>Have good knowledge of Software Development and Testing Life Cycle</li>
-        <li>Have good knowledge of Software Development Best Practices</li>
       </ul>
     </div>
   )
