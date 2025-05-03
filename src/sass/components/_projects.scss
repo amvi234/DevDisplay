@@ -1,20 +1,20 @@
 .projects {
+    margin: 0;
     position: absolute;
-    left: 10%;
-    top: 15%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Montserrat", sans-serif;
 
     &__title {
-        position: relative;
-        left: 250%;
-        top: 20%;
         color: red;
+		text-align: center;
         font-size: 5.5rem;
         font-weight: bold;
         margin-bottom: 5rem;
     }
 
     &__grid {
-        position: absolute;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 4rem;
@@ -91,5 +91,21 @@
         border: 2px solid green;
         border-radius: 1rem;
         transition: all 0.3s ease;
+    }
+}
+
+@media (max-width: 600px) {
+    .projects {
+        &__title {
+            font-size: 2.5rem;
+        }
+
+        &__item--name {
+            font-size: 1.6rem;
+        }
+
+        &__item--description {
+            font-size: 1rem;
+        }
     }
 }
