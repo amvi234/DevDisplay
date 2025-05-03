@@ -9,18 +9,13 @@ export default function Skills() {
     { name: "SCSS", url: "https://sass-lang.com/" },
     { name: "Next.js", url: "https://nextjs.org/" },
     { name: "Tailwind CSS", url: "https://tailwindcss.com/" },
-    { name: "HTML5", url: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" },
-    { name: "CSS3", url: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
     { name: "Redux", url: "https://redux.js.org/" },
-    { name: "Postman", url: "https://www.postman.com/" },
     { name: "Git", url: "https://git-scm.com/" },
     { name: "Docker", url: "https://www.docker.com/" },
     { name: "AWS", url: "https://aws.amazon.com/" },
     { name: "CI/CD", url: "https://en.wikipedia.org/wiki/CI/CD" },
     { name: "PostgreSQL", url: "https://www.postgresql.org/" },
     { name: "Node.js", url: "https://nodejs.org/" },
-    { name: "Storybook", url: "https://storybook.js.org/" },
-    { name: "Restful APIs", url: "https://restfulapi.net/" }
   ];
 
   return (
