@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin, FaHackerrank } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
-import { FiDownload, FiPhone, FiMail } from "react-icons/fi";
+import { FiDownload, FiPhone, FiMail, FiYoutube } from "react-icons/fi";
 
 export default function Footer() {
     return (
@@ -21,7 +21,7 @@ export default function Footer() {
             </div>
             <div className="footer__middle">
                 <a
-                    href="https://drive.google.com/file/d/1CC1YFRRF2TTp1_TkkFyIyWonY_lKxhO3/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1gpwulXTmlZ4GE5oz8qYl7KQprTCdYsGV/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="footer__link"
@@ -31,6 +31,15 @@ export default function Footer() {
                 </a>
             </div>
             <div className="footer__right">
+                <a
+                    href="https://www.youtube.com/@thejavascriptworkmate8533"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="footer__social-link"
+                    title="YouTube"
+                >
+                    <FiYoutube size={24} className="footer__social-icon" />  
+                </a>
                 <a
                     href="https://github.com/amvi234"
                     target="_blank"
