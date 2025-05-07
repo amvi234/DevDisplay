@@ -1,134 +1,152 @@
 .projects {
     margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    width: 100%;
+    top: 0;
+    max-width: 150rem;
+    padding: 4rem 2rem;
     font-family: "Montserrat", sans-serif;
-    overflow: scroll;
-
-
+    
     &__title {
-        color: red;
-        text-align: center;
-        font-size: 5.5rem;
-        font-weight: bold;
-        margin-bottom: 5rem;
+      color: red;
+      text-align: center;
+      font-size: 5.5rem;
+      font-weight: bold;
+      margin-bottom: 5rem;
     }
-
+    
     &__grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 4rem;
-        list-style-type: none;
-        align-items: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+      gap: 4rem;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
     }
-
+    
     &__item {
-        position: relative;
-        height: 40rem;
-        width: 30rem;
-        background: transparent;
-        background-color: cyan;
-
-        &--name {
-            position: absolute;
-            font-size: 4rem;
-            left: 5rem;
-            color: Blue;
-            align-items: center;
-            text-align: center;
+      position: relative;
+      height: 40rem;
+      width: 100%;
+      background-color: cyan;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      
+      &--name {
+        font-size: 3rem;
+        color: blue;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      
+      &--status {
+        font-size: 2rem;
+        color: green;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+      
+      &--description {
+        font-weight: 500;
+        padding: 1rem;
+        text-align: center;
+        color: red;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        flex-grow: 1;
+        overflow-y: AUTO;
+      }
+      
+      &--links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem 0;
+      }
+      
+      &--tech {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: auto;
+        
+        .tech-icon {
+          font-size: 2.4rem;
+          color: #333;
+          transition: color 0.3s ease;
+          
+          &:hover {
+            color: blue;
+          }
         }
-
-        &--description {
-            position: absolute;
-            font-weight: 500;
-            padding: 0.5rem;
-            height: 20rem;
-            text-align: center;
-            color: red;
-            font-size: 2rem;
-            top: 10rem;
-        }
-
-        &--status {
-            position: relative;
-            font-size: 2rem;
-            top: 6rem;
-            ;
-            color: green;
-            left: 5rem;
-        }
-
-        &--tech {
-            position: absolute;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            top: 34rem;
-            left: 5rem;
-            right: 5rem;
-            justify-content: center;
-
-            .tech-icon {
-                font-size: 2.4rem;
-                color: #333;
-            }
-        }
-
-        &--links {
-            position: relative;
-            top: 25rem;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 2rem;
-            padding: 2rem;
-        }
+      }
     }
-
+    
     &__link {
-        list-style-type: none;
-        font-size: 5rem;
-        border: 2px solid green;
-        border-radius: 1rem;
-        transition: all 0.3s ease;
+      list-style-type: none;
+      font-size: 3rem;
+      border-radius: 1rem;
+      padding: 0.5rem 1rem;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background-color: green;
+        color: white;
+        transform: translateY(-3px);
+      }
     }
-}
-
-@media (max-width: 600px) {
-    .projects {
-        height: 100vh;
-
-        &__grid {
-            grid-template-columns: repeat(1, 1fr);
-            gap: 1rem;
-            height: 10rem;
-        }
-
-        &__description {
-            height: 5rem;
-            font-size: 1.5rem;
-        }
-
-        &__links {
-            top: 2rem;
-        }
-
-        &__title {
-            font-size: 2.5rem;
-        }
-
-        &__tech {
-            top: 2rem;
-        }
-
-        &__item--name {
-            font-size: 1.6rem;
-        }
-
-        &__item--description {
-            font-size: 1rem;
-        }
+    
+    // Media queries
+    @media (max-width: 1200px) {
+      &__grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
-}
+    
+    @media (max-width: 900px) {
+      &__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 600px) {
+    top: 0;
+
+      height: auto;
+      padding: 2rem 1rem;
+      &__title {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+      }
+      
+      &__grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      
+      &__item {
+        height: auto;
+        min-height: 30rem;
+        
+        &--name {
+          font-size: 2.5rem;
+        }
+        
+        &--status {
+          font-size: 1.6rem;
+        }
+        
+        &--description {
+          font-size: 1.6rem;
+        }
+      }
+      
+      &__link {
+        font-size: 2.5rem;
+      }
+    }
+  }
